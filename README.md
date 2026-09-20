@@ -2,6 +2,10 @@
 
 Official code for **Beyond Band Importance: Signed Orientation-Aware Spectral Learning for Graph Fraud Detection**.
 
+> **Reviewer:** please read **[REVIEW.md](./REVIEW.md)** first. It pins you to
+> the submission snapshot (`v1.0`), maps every paper claim to the file that
+> implements it, and gives the exact reproduction commands.
+
 `--dataset` with `--abundant` or `--scarce` loads the paper recipe. `--10-seeds` runs the ten-reinitialization protocol.
 
 ## Environment
@@ -52,29 +56,4 @@ Outputs: `outputs/<dataset>-<regime>/`.
 python scripts/summarize.py outputs/yelpchi-abundant
 ```
 
-T-Social needs ~24 GB GPU memory. More detail: [GUIDELINES.md](GUIDELINES.md).
-
-## Code
-
-```text
-train.py              --dataset --abundant/--scarce --10-seeds
-soar.py               model
-protocol.py           frozen split
-data.py               graph I/O
-configs/paper.json    paper recipes
-scripts/summarize.py  aggregate runs
-```
-
-## Citation
-
-```bibtex
-@article{tian2026soar,
-  title   = {Beyond Band Importance: Signed Orientation-Aware Spectral Learning for Graph Fraud Detection},
-  author  = {Tian, Chunwei and Meng, Qi},
-  journal = {IEEE Transactions on Knowledge and Data Engineering},
-  year    = {2026},
-  note    = {Manuscript}
-}
-```
-
-MIT license. See [`LICENSE`](LICENSE) and [`CITATION.cff`](CITATION.cff).
+T-Social needs ~24 GB GPU memory.
