@@ -24,18 +24,3 @@ data/*
 venv/
 tmp/
 .cache/
-
-# LaTeX build artifacts (keep figure PDFs versioned)
-*.aux
-*.log
-*.bbl
-*.blg
-*.fdb_latexmk
-*.fls
-*.synctex.gz
-*.out
-*.toc
-*.lof
-*.lot
-/handmade.pdf
-/manuscript/handmade.pdf

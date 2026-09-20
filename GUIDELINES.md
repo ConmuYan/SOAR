@@ -82,12 +82,7 @@ Do not retune on test. Do not change `SPLIT_SEED`.
 
 ## Outputs
 
-Files land in `outputs/<dataset>-<regime>/`:
-
-```text
-full_s0.json …          one reinitialization
-summary.json            mean ± population SD vs paper numbers
-```
+Files land in `outputs/<dataset>-<regime>/` (one JSON per reinitialization, plus `summary.json`).
 
 ```bash
 python scripts/summarize.py outputs/yelpchi-abundant
