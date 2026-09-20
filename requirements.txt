@@ -1,6 +1,13 @@
+# Python 3.10–3.12 recommended.
+# 3.13 runs YelpChi / Amazon / --smoke. DGL (T-Finance / T-Social) does not
+# import on 3.13 (collections.Mapping). Install a CUDA PyTorch wheel first:
+#   https://pytorch.org/get-started/locally/
+
 numpy>=1.24
 scipy>=1.10
 scikit-learn>=1.3
 torch>=2.1
-# DGL is required only for T-Finance and T-Social.
-dgl>=1.1
+
+# T-Finance and T-Social only. Match the wheel to your PyTorch/CUDA:
+#   https://www.dgl.ai/pages/start.html
+dgl>=1.1; python_version < "3.13"

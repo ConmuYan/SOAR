@@ -12,6 +12,7 @@
 [Results](#results) ·
 [Setup](#setup) ·
 [Reproduce](#reproduce) ·
+[Guidelines](GUIDELINES.md) ·
 [Citation](#citation)
 
 <img src="manuscript/fig_motivation.png" width="88%" alt="Band importance does not specify class orientation on YelpChi.">
@@ -66,17 +67,16 @@ Baselines in the paper are **published references**, not matched reruns. Amazon 
 
 ## Setup
 
+Python **3.10–3.12** recommended. Install a CUDA build of [PyTorch](https://pytorch.org/get-started/locally/) that matches your driver **before** `requirements.txt` if you train on GPU. DGL is required only for T-Finance and T-Social and is skipped on Python 3.13.
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-```
-
-Install a CUDA build of [PyTorch](https://pytorch.org/get-started/locally/) that matches your driver **before** `requirements.txt` if you train on GPU. DGL is required only for T-Finance and T-Social.
-
-```bash
 python train.py --smoke
 ```
+
+Full protocol, hardware notes, and what not to change: [GUIDELINES.md](GUIDELINES.md).
 
 ## Data
 
