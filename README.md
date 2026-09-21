@@ -2,10 +2,6 @@
 
 Official code for **Beyond Band Importance: Signed Orientation-Aware Spectral Learning for Graph Fraud Detection**.
 
-> **Reviewer:** please read **[REVIEW.md](./REVIEW.md)** first. It pins you to
-> the submission snapshot (`v1.0`), maps every paper claim to the file that
-> implements it, and gives the exact reproduction commands.
-
 `--dataset` with `--abundant` or `--scarce` loads the paper recipe. `--10-seeds` runs the ten-reinitialization protocol.
 
 ## Environment
